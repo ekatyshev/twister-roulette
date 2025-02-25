@@ -162,7 +162,7 @@ document.body.appendChild(el);
   <div id="info__canvas">
     <img id="wheel" src="img/twister-field.svg" alt="roulette" />
     <div id="help">
-      <p>If you'd like to play <a href="//en.wikipedia.org/wiki/Twister_(game)" title="" class="link link_dark" target="_blank">Twister</a> but haven't spinner you can use this website. Tap anywhere on screen and app show color and hand or foot.</p>
+      <p>If you'd like to play <a href="//en.wikipedia.org/wiki/Twister_(game)" title="" class="link link_dark" target="_blank">Twister</a> but don't have a spinner, you can use this website. Tap anywhere on screen and app show color and hand or foot.</p>
       <p>Also you can select language and use timer.</p>
     </div>
     <button id="start">Start play!</button>
