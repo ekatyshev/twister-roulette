@@ -30,14 +30,14 @@ document.body.appendChild(el);
 <script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="js/jquery.cookie.js"></script>
 
-<!-- Языки -->
+<!-- Languages -->
 <script type="text/javascript" src="js/i18n.js"></script>
 
-<!-- Лайкли -->
+<!-- Likely -->
 <script src="js/likely-0.91/likely.js"></script>
 <link rel="stylesheet" href="js/likely-0.91/likely.css">
 
-<!-- Рулетка -->
+<!-- Roulette -->
 <script type="text/javascript" src="js/roulette.js"></script>
 
 <title>Roulette for Twister</title>
@@ -72,25 +72,7 @@ document.body.appendChild(el);
 <div class="content__wrapper content__wrapper_full">
 
 <header id="header">
-  <h1 id="title">Roulette for Twister</h1><!--
-  <div class="button button_settings">
-    <svg class="button__icon">
-      <use xlink:href="#settings_icon"></use>
-    </svg>
-  </div>--><!--
-  <div class="button button_sound">
-    <svg class="button__icon button__icon_off">
-      <use xlink:href="#sound_off_icon"></use>
-    </svg>
-    <svg class="button__icon button__icon_on">
-      <use xlink:href="#sound_on_icon"></use>
-    </svg>
-  </div>
-  <div class="button button_hide-ad">
-    <svg class="button__icon chevron-right_icon">
-      <use xlink:href="#chevron-right_icon"></use>
-    </svg>
-  </div>-->
+  <h1 id="title">Roulette for Twister</h1>
   <div class="button button_help disable">
     <svg class="button__icon">
       <use xlink:href="#help_icon"></use>
@@ -123,12 +105,10 @@ document.body.appendChild(el);
   <div class="button button_lang">
     <svg class="button__icon">
       <use xlink:href="#language_icon"></use>
-    </svg><!--
-    <span>en</span>-->
+    </svg>
   </div>
   <ul id="lang-list">
-    <li><a rel="alternate" hreflang="be" href="be" class="lang">Белорусский</a></li><!--
-    <li><a rel="alternate" hreflang="cs" href="cs" class="lang">Čeština</a></li>-->
+    <li><a rel="alternate" hreflang="be" href="be" class="lang">Белорусский</a></li>
     <li><a rel="alternate" hreflang="de" href="de" class="lang">Deutsch</a></li>
     <li><a rel="alternate" hreflang="en" href="en" class="lang">English</a></li>
     <li><a rel="alternate" hreflang="es" href="es" class="lang">Español</a></li>
