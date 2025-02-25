@@ -51,6 +51,10 @@ a.link_dark:hover {
 	border-bottom: 1px solid #000;
 }
 
+p {
+  margin-bottom: 8px;
+}
+
 #svg-sprite {
 	display: none;
 }
@@ -149,8 +153,8 @@ a.link_dark:hover {
   color: rgba(255, 255, 255, .8);
   text-transform: uppercase;
   font-weight: 500;
-  width: 76px;
-  text-align: right;
+  *width: 76px;
+  *text-align: right;
 }
 
 .button_lang span {
@@ -175,10 +179,16 @@ a.link_dark:hover {
 	right: 12px;
 }
 
+.button_help {
+	position: absolute;
+	bottom: 12px;
+	left: 12px;
+}
+
 .button_close {
 	position: absolute;
 	top: 12px;
-	left: 12px;
+	right: 12px;
 }
 
 .button_play,
@@ -204,7 +214,7 @@ a.link_dark:hover {
 }
 
 .button.disable:hover .button__icon {
-	opacity: .8;
+	opacity: .4;
 }
 
 .button__icon_on {
@@ -284,7 +294,6 @@ svg .icon {
 	width: 100%;
 	height: 100%;
 	text-align: center;
-	overflow: hidden;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -357,7 +366,7 @@ h1 {
 }
 
 
-#about {
+#aboutDEPR {
   z-index: 120;
   font-size: 14px;
   position: absolute;
@@ -369,7 +378,7 @@ h1 {
   opacity: .8;
 }
 
-#about:hover {
+#aboutDEPR:hover {
   opacity: 1;
 }
 
@@ -398,13 +407,81 @@ h1 {
 
 
 
+#info {
+  z-index: 200;
+  position: fixed; 
+  -webkit-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, .2); 
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, .2);
+  background: #fff;
+  border-radius: 1vmin;
+  width: calc(100vw - 24px);
+  max-width: 500px;
+  bottom: 12px;
+  left: 12px;
+  font-size: 14px;
+  line-height: 1.3;
+}
+
+#info__canvas {
+  width: 100%;
+  height: 100%;
+  max-height: calc(100vh - 24px);
+  padding: 20px 48px 32px 28px;
+  overflow-y: auto;
+}
+
+#wheel {
+  width: 60px;
+  height: 60px;
+}
+
+#help {
+  margin: 8px 0 0 2px;
+}
+
+#start {
+  font-size: 14px;
+  margin: 16px 0 24px 2px;
+  border: 1px solid #000;
+  border: 0;
+  border-radius: 4px;
+  background: transparent;
+  background: #26c;
+  color: #fff;
+  padding: 8px 24px;
+}
+
+#about {
+  color: #000;
+  margin: 16px 0 0 2px;
+}
+
+
+
 /* Adaptation */
 
-@media screen and (max-width: 400px) { /* Ширина менее 400px */
+@media screen and (max-width: 1000px) { /* Ширина менее 1000px */
+  
+  #ad_wrapper,
+  .button_hide-ad {
+    display: none;
+  }
+
+  .content_wrapper__with-ad {
+    width: 100%;
+  }
+	
+}
+
+@media screen and (max-width: 700px) { /* Ширина менее 700px */
   
   .desktop-part {
     display: none;
   }
+
+}
+
+@media screen and (max-width: 400px) { /* Ширина менее 400px */
 	
 }
 
@@ -441,9 +518,15 @@ screen and (orientation: portrait) and (max-width: 400px) { /* Портретн�
 		right: 4px;
 	}
 
+  .button_help {
+    position: absolute;
+    bottom: 4px;
+    left: 4px;
+  }
+
 	.button_close {
 		top: 4px;
-		left: 4px;
+		right: 4px;
 	}
 
 	.button_play,
@@ -454,22 +537,6 @@ screen and (orientation: portrait) and (max-width: 400px) { /* Портретн�
 	#timer {
 		bottom: 52px;
 	}
-  
-  #about {
-    font-size: 14px;
-    left: 4px;
-    bottom: 4px;
-    padding: 18px;
-    height: 48px;
-  }
-
-  #author {
-    margin-right: 8px;
-  }
-  
-  .desktop-part {
-    display: none;
-  }
 	
 }
 
@@ -490,10 +557,6 @@ screen and (orientation: portrait) and (max-width: 400px) { /* Портретн�
 	#color-name {
 		top: 30vh;
 	}
-  
-  .desktop-part {
-    display: none;
-  }
 	
 }
 
@@ -503,18 +566,5 @@ screen and (orientation: portrait) and (max-width: 400px) { /* Портретн�
 	#color-name {
 		font-size: 10vh;	
 	}
-	
-}
-
-@media screen and (max-width: 1000px) { /* Ширина менее 1000px */
-  
-  #ad_wrapper,
-  .button_hide-ad {
-    display: none;
-  }
-
-  .content_wrapper__with-ad {
-    width: 100%;
-  }
 	
 }

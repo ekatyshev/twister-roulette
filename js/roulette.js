@@ -30,6 +30,7 @@ $(document).ready(function() {
       lang = urlLang;
       $.cookie('lang', lang, { path: '/' });
     }
+    window.history.pushState('/', 'Title', lang);
     //alert('final lang: '+lang);
   }
 
@@ -44,16 +45,17 @@ $(document).ready(function() {
 
   $('.button_lang span').text(lang);
 
-  var title = strings['title2'][lang];
+  var title = strings['title'][lang];
+  var title2 = strings['title2'][lang];
   var tip = strings['tip'][lang];
 
   $('title').html(title);
-  $('#title').html(title);
+  $('#title').html(title2);
   $('#tip').text(tip);
   $('#old').attr('href', '//old.twister-roulette.com/'+lang);
   $('#old').text(strings['old version'][lang]);
   var authorArr = strings['author'][lang].split(' ');
-  $('#author').html('<span class="desktop-part">© </span><a href="//evgenykatyshev.ru/projects/twister-roulette/" class="link link_light"><span class="desktop-part">' + authorArr[0] + ' </span>' + authorArr[1] + '</a>');
+  $('#author').html('© <a href="//ekatyshev.com" class="link link_dark">' + authorArr[0] + ' ' + authorArr[1] + '</a>');
 
   var colorNames = [
     strings['red'][lang],
@@ -251,9 +253,22 @@ $(document).ready(function() {
   $('.button_lang').on('click tap taphold', function() {
     $('#lang-list').show();
   });
+  
+  if($.cookie('info') == 'closed') {
+    $('#info').hide();
+    $('.button_help').removeClass('disable');
+  }
 
-  /*$('.lang').on('click tap taphold', function() {
-    $('#lang-list').hide();
-  });*/
+  $('#info .button_close, #start').on('click tap taphold', function() {
+    $('#info').hide();
+    $('.button_help').toggleClass('disable');
+    spin();
+    $.cookie('info', 'closed', { path: '/' });
+  });
+
+  $('.button_help').on('click tap taphold', function() {
+    $('#info').toggle();
+    $('.button_help').toggleClass('disable');
+  });
 
 });	
