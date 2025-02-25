@@ -167,8 +167,7 @@ document.body.appendChild(el);
     </div>
     <button id="start">Start play!</button>
     <div id="about">
-      <span id="author">© <a href="//ekatyshev.com" class="link link_dark">Evgeny Katyshev</a></span><!--
-      <a id="old" href="//old.twister-roulette.com/" class="link link_dark">Old version</a>-->
+      <span id="author">© <a href="//ekatyshev.com" class="link link_dark">Evgeny Katyshev</a></span>
     </div>
   </div>
 </div>
