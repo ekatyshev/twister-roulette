@@ -5,7 +5,7 @@ $(document).ready(function() {
   var setLang = function() {
     var pathname = window.location.pathname;
     var pathnameArr = pathname.split('/');
-    urlLang = pathnameArr[1];
+    urlLang = pathnameArr[-1];
     //alert('from URL: '+lang);
     if(jQuery.inArray(urlLang, languages) == -1) {
       cookieLang = $.cookie('lang'); // Get language from cookies
