@@ -4,7 +4,7 @@
 
 <head>
 
-<base href="//twister-roulette.com/" />
+<!--<base href="//twister-roulette.com/" />-->
 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="robots" content="index, follow" />
