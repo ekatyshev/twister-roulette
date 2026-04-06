@@ -110,7 +110,7 @@
     </svg>
   </div>
   <ul id="lang-list">
-    <li><a rel="alternate" hreflang="be" href="be" class="lang">Белорусский</a></li>
+    <li><a rel="alternate" hreflang="be" href="be" class="lang">Беларуский</a></li>
     <li><a rel="alternate" hreflang="de" href="de" class="lang">Deutsch</a></li>
     <li><a rel="alternate" hreflang="en" href="en" class="lang">English</a></li>
     <li><a rel="alternate" hreflang="es" href="es" class="lang">Español</a></li>
@@ -144,8 +144,8 @@
   <div id="info__canvas">
     <img id="wheel" src="img/twister-field.svg" alt="roulette" />
     <div id="help">
-      <p>If you'd like to play <a href="//en.wikipedia.org/wiki/Twister_(game)" title="" class="link link_dark" target="_blank">Twister</a> but don't have a spinner, you can use this website. Tap anywhere on screen and app show color and hand or foot.</p>
-      <p>Also you can select language and use timer.</p>
+      <p>If you'd like to play <a href="//en.wikipedia.org/wiki/Twister_(game)" title="" class="link link_dark" target="_blank">Twister</a> but don't have a spinner, you can use this website. Tap anywhere on screen, and the app shows color and hand or foot.</p>
+      <p>Also, you can select a language and use a timer.</p>
     </div>
     <button id="start">Start play!</button>
     <div id="about">
